@@ -44,9 +44,9 @@ const Sidenav = () => {
             </nav>
             <hr className='bg-zinc-600' />
             <nav className='flex text-xl font-semibold flex-col text-zinc-300'>
-                <h1 className='text-2xl mt-5 mb-5 font-semibold'>Website Information</h1>
-                <Link className='hover:bg-[#6556CD] duration-200 p-4 rounded-lg '>  <i className="mr-2 text-zinc-300 ri-information-fill"></i> About SCSDB</Link>
-                <Link className='hover:bg-[#6556CD] duration-200 p-4 rounded-lg'> <i className="mr-2 text-zinc-300 ri-phone-fill"></i>
+                <h1 className='text-2xl  mt-5 mb-5 font-semibold'>Website Information</h1>
+                <Link className='hover:bg-[#6556CD] p-2 flex duration-200  rounded-lg '>  <i className="mr-2 text-zinc-300 ri-information-fill"></i> About </Link>
+                <Link className='hover:bg-[#6556CD] duration-200 p-2 rounded-lg'> <i className="mr-2 text-zinc-300 ri-phone-fill"></i>
                     Contact Us</Link>
             </nav>
         </div>
