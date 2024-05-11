@@ -20,7 +20,7 @@ const Topnav = () => {
         getSearch();
     }, [query])
     return (
-        <div className=' w-[80%] mt-3 h-[10vh] relative mx-auto flex items-center '>
+        <div className=' w-[80%]   h-[10vh] relative mx-auto flex items-center '>
             <i className="ml-5 text-zinc-400 text-3xl ri-search-line"></i>
             <input onChange={(e) => setquery(e.target.value)} value={query}
                 className='w-[50%] text-xl p-5 mx-10 bg-transparent border-none outline-none text-zinc-400'
@@ -32,7 +32,7 @@ const Topnav = () => {
             <div className='absolute w-[50%] max-h-[50vh] overflow-auto bg-zinc-200 top-[90%] left-10 '>
                 {searches.map((s, i) => (
                     <Link key={i} className="hover:text-black hover:bg-zinc-300 duration-300 font-semibold text-zinc-600 w-[100%] p-10 flex justify-start items-center border-b-2 border-zinc-100">
-                        <img className='w-[10vh] h-[10vh] mr-10 rounded-md object-cover' src={s.backdrop_path || s.profile_path ? `https://image.tmdb.org/t/p/original/${s.backdrop_path || s.profile_path} `:NotFound } alt="" />
+                        <img className='w-[10vh] h-[10vh] mr-10 rounded-md object-cover' src={s.backdrop_path || s.profile_path ? `https://image.tmdb.org/t/p/original/${s.backdrop_path || s.profile_path} ` : NotFound} alt="" />
                         <span className='text-zinc-700'>{s.original_title || s.name || s.title || s.original_name}</span>
                     </Link>
                 ))}
