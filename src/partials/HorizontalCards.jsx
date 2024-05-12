@@ -2,7 +2,7 @@ import React from 'react'
 import Dropdown from './Dropdown'
 import NotFound from '../../public/image.jpg'
 
-const Horizontal = ({ data }) => {
+const Horizontal = ({ data  }) => {
     return (
 
            
