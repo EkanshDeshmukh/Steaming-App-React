@@ -5,13 +5,14 @@ import Topnav from '../partials/Topnav'
 import Header from '../partials/Header'
 import Horizontal from '../partials/HorizontalCards'
 import Dropdown from '../partials/Dropdown'
+import Loading from './Loading'
 
 const Home = () => {
     document.title = 'SCSDB |  Homepage'
 
     const [wallpaper, setwallpaper] = useState(null)
     const [trending, settrending] = useState(null)
-    const [category, setcategory] = useState('movie')
+    const [category, setcategory] = useState('all')
 
     const setwallpaperHeader = async () => {
         try {
@@ -47,7 +48,7 @@ const Home = () => {
                 <Horizontal data={trending} />
             </div>
         </>
-    ) : (<h1 className='text-4xl text-red-300 text-center '>Loading..</h1>)
+    ) : <Loading />
 
 }
 
