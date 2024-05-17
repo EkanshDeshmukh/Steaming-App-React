@@ -4,7 +4,6 @@ import Dropdown from '../partials/Dropdown'
 import Topnav from '../partials/Topnav'
 import axios from '../utils/axios'
 import Cards from '../partials/Cards'
-import InfiniteScroll from 'react-infinite-scroll-component'
 
 const Trending = () => {
     document.title = "SCSDB | Trending";
