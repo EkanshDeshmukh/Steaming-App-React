@@ -5,6 +5,7 @@
 *{
   font-family: gilroy;
   color: white;
+  user-select: none;
 }
 ::-webkit-scrollbar {
   width: 7px;

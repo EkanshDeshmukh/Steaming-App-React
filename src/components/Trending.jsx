@@ -27,7 +27,7 @@ const Trending = () => {
     }, [category, duration])
 
     return (
-        <div className='w-screen h-screen px-[2%] '>
+        <div className='w-screen  h-fit '>
             <div className='w-full flex justify-between items-center'>
                 <h1 className='text-zinc-400 text-2xl p-10 font-semibold'> <i
                     onClick={() => navigate(-1)}
