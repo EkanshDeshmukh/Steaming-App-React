@@ -32,9 +32,17 @@ const Trending = () => {
         }
     }
     //  console.log(trending);
-
+    const refershHandler = () => {
+        if (trending.length === 0) {
+            GetTrending();
+        } else {
+            setpage(1);
+            settrending([]);
+            GetTrending();
+        }
+    };
     useEffect(() => {
-        GetTrending()
+refershHandler()
     }, [category, duration])
 
     return trending.length > 0 ? (
@@ -46,9 +54,9 @@ const Trending = () => {
                 ></i> Trending</h1>
                 <div className='w-[80%] flex items-center '>
                     <Topnav />
-                    <Dropdown func={(e) => setcategory(e.target.value)} title='Category' options={['all', 'tv', 'movie']} />
+                    <Dropdown  title='Category' options={['all', 'tv', 'movie']} func={(e) => setcategory(e.target.value)}/>
                     <div className='w-[2%]'></div>
-                    <Dropdown func={(e) => setduration(e.target.value)} title='Duration' options={['DAY', 'WEEK']} />
+                    <Dropdown  title='Duration' options={['day', 'week']} func={(e) => setduration(e.target.value)}/>
 
                 </div>
             </div>
