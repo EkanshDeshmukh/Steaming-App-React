@@ -42,7 +42,7 @@ const Trending = () => {
         }
     };
     useEffect(() => {
-refershHandler()
+        refershHandler()
     }, [category, duration])
 
     return trending.length > 0 ? (
