@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from '../utils/axios'
-import Sidenav from '../partials/Sidenav'
-import Topnav from '../partials/Topnav'
-import Header from '../partials/Header'
-import Horizontal from '../partials/HorizontalCards'
-import Dropdown from '../partials/Dropdown'
+import Sidenav from './partials/Sidenav'
+import Topnav from './partials/Topnav'
+import Header from './partials/Header'
+import Horizontal from './partials/HorizontalCards'
+import Dropdown from './partials/Dropdown'
 import Loading from './Loading'
 
 const Home = () => {

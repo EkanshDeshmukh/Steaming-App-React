@@ -1,6 +1,6 @@
 import React from 'react'
 import Dropdown from './Dropdown'
-import NotFound from '../../public/image.jpg'
+import NotFound from '../../../public/image.jpg'
 
 const Horizontal = ({ data  }) => {
     return (
