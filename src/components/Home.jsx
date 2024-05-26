@@ -41,7 +41,7 @@ const Home = () => {
             <div className=' w-[80%] h-full'>
                 <Topnav />
                 <Header data={wallpaper} />
-                <div className='mb-4 mt-4 pl-5 pr-5 flex items-center justify-between '>
+                <div className=' mt-2 mb-2 pl-5 pr-5 flex items-center justify-between '>
                     <h1 className='text-zinc-300 text-3xl font-semibold'>Trending</h1>
                     <Dropdown title='Filter' options={['all', 'tv', 'movie']} func={(e) => setcategory(e.target.value)} />
                 </div>
