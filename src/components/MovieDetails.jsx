@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
+import { Link, Outlet, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { asynclaodmovie } from "../store/actions/movieAction";
 import { removemovie } from '../store/reducers/movieSlice'
 import Loading from '../components/Loading'
@@ -102,7 +102,8 @@ const MovieDetails = () => {
             </h1>
             <HorizontalCards title="movie" data={info.recommendations.length > 0
                 ? info.recommendations
-                : info.similar} />
+                : info.similar} />  
+       <Outlet/>
         </div>
 
     ) : (<Loading />)
