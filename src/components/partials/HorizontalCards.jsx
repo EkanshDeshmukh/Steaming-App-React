@@ -3,7 +3,8 @@ import Dropdown from './Dropdown'
 import NotFound from '../../../public/image.jpg'
 import { Link } from 'react-router-dom'
 
-const Horizontal = ({ data }) => {
+
+const Horizontal = ({ data,title }) => {
     return (
 
 

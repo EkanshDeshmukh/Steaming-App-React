@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Loading from '../Loading';
 
 const Cards = ({ data, title }) => {
-     console.log(title);
+     //console.log(title);
     if (!data || data.length === 0) {
         return <div><Loading /></div>;
     }
